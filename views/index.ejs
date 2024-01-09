@@ -1,0 +1,45 @@
+<% include ./partials/header.ejs %>
+
+<div class="w-full h-screen bg-zinc-300 flex items-center justify-center">
+  <div class="w-96 bg-white px-12 py-5 rounded-[30px]">
+    <img
+      class="w-10 h-10 rounded-full m-auto mb-2"
+      src="../images/pinterest.png"
+      alt="" />
+    <h1
+      class="text-2xl leading-none tracking-tight text-center font-semibold mb-6">
+      Welcome to pinterest.
+    </h1>
+    <form action="/login" method="post">
+      <input
+        class="block w-full px-3 py-2 mt-4 border-2 rounded-md"
+        type="text"
+        name="username"
+        placeholder="username" />
+      <input
+        class="block w-full px-3 py-2 mt-4 border-2 rounded-md"
+        type="password"
+        name="password"
+        placeholder="password" />
+      <a href="#" class="mt-2 font-semibold inline-block text-zinc-500"
+        >Forgot password ?</a
+      >
+      <input
+        class="block w-full px-3 py-2 bg-red-600 text-white hover:bg-red-700 rounded-full mt-4"
+        type="submit"
+        value="Log In" />
+      <p class="text-xs text-zinc-500 font-semibold text-center mt-4">
+        By continuing, you agree to
+        <span class="underline font-bold"> Pinterest's Terms of Service</span
+        >and acknowledge that you've read our Privacy Policy
+      </p>
+      <h1
+        class="inline-block mt-6 text-sm font-semibold text-zinc-700 w-full text-center">
+        Dont have an account ?
+        <a href="/register" class="font-bold"> Register </a>
+      </h1>
+    </form>
+  </div>
+</div>
+
+<% include ./partials/footer.ejs %>
